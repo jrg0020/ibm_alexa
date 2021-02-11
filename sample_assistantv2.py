@@ -12,7 +12,7 @@ def main(dict):
         authenticator=authenticator
     )
 
-    assistant.set_service_url('https://gateway.watsonplatform.net/assistant/api')
+    assistant.set_service_url('https://api.us-south.assistant.watson.cloud.ibm.com/instances/4aac63e2-3730-428d-b87e-21075a9e853e/v2/assistants/95bfa4f0-52dc-41f1-afb6-a46e11ffe94f/sessions')
     session = assistant.create_session("95bfa4f0-52dc-41f1-afb6-a46e11ffe94f").get_result()
 
     #decode and store message body from alexa
